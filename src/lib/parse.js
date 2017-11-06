@@ -31,7 +31,7 @@ function validate_data( value, settings, column_name ) {
             let valfunc =  validate[name];
 
             if (valfunc(value, ...args) === false) {
-                errors.push({[column_name]: validation_name});
+                errors.push({validation_type: validation_name, validation_fields: column_name});
             }
         }
     });
