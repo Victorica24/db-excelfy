@@ -1,0 +1,91 @@
+{
+    "row": [
+        {
+            "name": "minOneFilled",
+            "values": [
+                ["departmentuif", "companynameuif"],
+                ["mail", "emailother", "telephoneNumber", "mobileTelephonenumber"]
+            ]
+        }
+    ],
+    "columns": {
+    	"titleprefix": {
+    		"validate": []
+    	},
+    	"givenname": {
+            "format": ["lowercase"],
+    		"validate": ["required"]
+    	},
+    	"namesuffix": {},
+    	"nameprefix": {},
+    	"sn": {
+    		"validate": ["required"]
+    	},
+    	"titlesuffix": {},
+    	"kvdgender": {},
+    	"departmentiduif": {},
+    	"departmentuif": {},
+    	"companynameuif": {},
+    	"fisiduif": {},
+    	"mail": {
+    		"validate": ["email", "maxValues|1"]
+    	},
+    	"emailother": {
+    		"validate": ["email", "maxValues|1"]
+    	},
+    	"kvdcountryuif": {},
+    	"postalcode": {},
+    	"location": {},
+    	"addressline1": {},
+    	"addressline2": {},
+    	"building": {},
+    	"room": {},
+    	"telephoneNumber": {
+    		"validate": ["phone"]
+    	},
+    	"facsimiletelephonenumber": {
+    		"validate": ["phone"]
+    	},
+    	"mobileTelephonenumber": {
+    		"validate": ["phone"]
+    	},
+    	"functiondescription": {},
+    	"imanidshort": {
+            "format": ["fillup|9|0"],
+            "validate": ["imanidshort"]
+        },
+    	"pnr": {
+            "validate": []
+        },
+    	"imanhrsystemid": {},
+    	"kvdmanageremail": {
+    		"validate": ["email", "maxValues|2"]
+    	},
+    	"kvddeputyemail": {
+    		"validate": ["email", "maxValues|2"]
+    	},
+    	"kvdsecretary1email": {
+    		"validate": ["email", "maxValues|1"]
+    	},
+    	"kvdsecretary2email": {
+    		"validate": ["email", "maxValues|1"]
+    	},
+    	"kvdsecretary3email": {
+    		"validate": ["email", "maxValues|1"]
+    	},
+    	"weblinks": {
+            "validate": ["weblink"]
+        },
+    	"usertype": {
+            "format": ["uppercase"],
+            "validate": ["usertype"]
+        },
+    	"allowmaintenanceemail": {
+    		"validate": ["email", "maxValues|1"]
+    	},
+    	"isdatabase": {},
+    	"dontdeliver": {},
+    	"evinamebyuif": {},
+    	"onlyadd": {}
+    }
+}

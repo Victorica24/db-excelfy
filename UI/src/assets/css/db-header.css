@@ -1,0 +1,37 @@
+@import "./db-settings.css";
+
+.header {
+    &__container {
+        padding: 2rem var(--content-space-right) 1rem var(--content-space-left);
+    }
+
+    &__headline {
+        margin: 0;
+
+        small {
+            font: var(--db-font-light);
+        }
+
+        &-icons {
+            float: right;
+        }
+    }
+
+    &__subheadline {
+        font: var(--db-font-regular);
+        font-weight: 600;
+        margin: var(--db-unit-quoter) 0;
+        line-height: 2;
+
+        span {
+            &:after {
+                content: ' - ';
+                margin: 0 var(--db-unit-quoter);
+            }
+
+            &:last-child:after {
+                content: '';
+            }
+        }
+    }
+}

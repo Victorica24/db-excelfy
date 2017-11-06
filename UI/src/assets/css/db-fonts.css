@@ -1,0 +1,35 @@
+@font-face
+{
+    font-family: 'DBHeadLightRegular';
+    font-weight: normal;
+    font-style: normal;;
+
+    src: url('../fonts/dbhea02-webfont.woff') format('woff'), url('../fonts/dbhea02-webfont.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'DBHeadRegular';
+    font-weight: normal;
+    font-style: normal;;
+
+    src: url('../fonts/dbhea03-webfont.woff') format('woff'), url('../fonts/dbhea03-webfont.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'DBSansRegular';
+    font-weight: normal;
+    font-style: normal;;
+
+    src: url('../fonts/dbsan03-webfont.woff') format('woff'), url('../fonts/dbsan03-webfont.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'DBSansBold';
+    font-weight: normal;
+    font-style: normal;;
+
+    src: url('../fonts/dbsan06-webfont.woff') format('woff'), url('../fonts/dbsan06-webfont.ttf') format('truetype');
+}

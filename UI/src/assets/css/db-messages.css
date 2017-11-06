@@ -1,0 +1,32 @@
+@import "./db-settings.css";
+
+.message-box {
+     &__no-data-found {
+        padding: 1rem var(--content-space-right) 1rem var(--content-space-left);
+        text-align: left;
+
+        h2 {
+            font: var(--db-font-light);
+            font-size: 1.8rem;
+        }
+    }
+
+    &__error {
+        margin: 1rem var(--content-space-right) 1rem var(--content-space-left);
+        padding: 1rem;
+        border: 2px solid var(--db-color-01-01);
+        color: var(--db-color-01-03);
+
+        h3 {
+            margin: 0 0 1rem 0;
+            font: var(--db-font-regular);
+            font-size: 1.3rem;
+            color: var(--db-color-01-01);
+        }
+    }
+
+    &__loader {
+        padding: 1rem var(--content-space-right) 1rem var(--content-space-left);
+        text-align: left;
+    }
+}

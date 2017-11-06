@@ -1,0 +1,18 @@
+@import './material-icons.css';
+@import './db-settings.css';
+@import './db-fonts.css';
+@import './db-buttons.css';
+
+html
+{
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+}
+
+body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}

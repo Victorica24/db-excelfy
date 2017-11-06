@@ -1,0 +1,27 @@
+@import "./db-settings.css";
+
+.db-button {
+    outline: 0;
+    padding: calc(var(--db-unit) * .2);
+    font: var(--db-font-regular);
+    font-size: .8rem;
+    font-weight: 600;
+    background-color: var(--db-color-white);
+    color: var(--db-color-03-11);
+    border: 0;
+    min-width: 8rem;
+    cursor: pointer;
+    transition-duration: 0.4s;
+
+    &:hover {
+        background-color: var(--db-color-03-03);
+    }
+
+    &.red {
+        background-color: var(--db-color-01-00);
+        color: var(--db-color-white);
+        &:hover {
+            background-color: var(--db-color-01-05);
+        }
+    }
+}

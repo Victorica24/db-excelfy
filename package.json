@@ -1,0 +1,31 @@
+{
+  "name": "simio",
+  "version": "1.0.0",
+  "description": "Loading, parsing and verify excel data file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/koa.js"
+  },
+  "keywords": [
+    "xmlx",
+    "csv",
+    "node"
+  ],
+  "author": "Jan Nahody <jan.nahody@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "boom": "^5.2.0",
+    "concat-stream": "^1.6.0",
+    "del": "^3.0.0",
+    "json2csv": "^3.11.2",
+    "koa": "^2.3.0",
+    "koa-better-body": "^3.0.4",
+    "koa-better-router": "^2.1.1",
+    "koa-pino-logger": "^2.1.1",
+    "koa-static": "^4.0.1",
+    "moment": "^2.19.1",
+    "node-xlsx": "^0.11.0"
+  },
+  "devDependencies": {}
+}
