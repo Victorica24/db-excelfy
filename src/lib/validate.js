@@ -41,6 +41,7 @@ class validate {
 
     static imanidshort( value ) {
         let re = /^([0-9]+)$/;
+
         if (typeof value === 'string' && value.length > 0) {
             return re.test(value);
         }

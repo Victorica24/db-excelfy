@@ -42,6 +42,10 @@ function validate_data( value, settings, column_name ) {
 function format_data( value, settings ) {
     let result = value;
 
+    if (typeof value === 'undefined') {
+        return result;
+    }
+
     if( (!settings) || (!settings.format) ) {
         return result;
     }
@@ -72,6 +76,18 @@ function validate_record( record, validations ) {
 
     return record;
 }
+
+function trimData(value) {
+    if (typeof value === 'undefined') {
+        return value;
+    }
+
+    if (typeof value === 'string' && value.length > 0) {
+        return value.trim();
+    }
+
+    return value;
+}
 /*
  * load excel file ad process
  */
@@ -85,7 +101,7 @@ function parse(filePath) {
         worksheet_table.data.slice(2).filter(value => { return value.length > 0 }).forEach((row, row_index) => {
             let newRow = { column_id: row_index+3, errors: [] };
             column_names.forEach( (column_name, column_index) => {
-                newRow[column_name] = typeof row[column_index] === 'string'?row[column_index].trim():row[column_index];
+                newRow[column_name] = trimData(row[column_index]);
                 newRow[column_name] = format_data( newRow[column_name], import_settings.columns[column_name] );
                 newRow.errors = newRow.errors.concat( validate_data( newRow[column_name], import_settings.columns[column_name], column_name ) );
             } );
