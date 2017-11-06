@@ -5,11 +5,12 @@ const router_api = require('./api-routes');
 const path = require('path');
 
 const app = new Koa();
+const port = process.env.PORT || 3000;
 
 app.use( pino_logger() );
 app.use( router_api.middleware() );
 app.use(serve( path.join(__dirname, '../', 'frontend') ));
 
-app.listen(3000);
+app.listen(port);
 
-console.log('listening on port 3000');
+console.log('listening on port ' + port);
