@@ -64,7 +64,8 @@ Vue.filter('translateError', function (value) {
     'required': 'Field entry is required',
     'email': 'Field entry is not a valid email',
     'phone': 'Field entry is not a valid phone number',
-    'weblink': 'Field entry is not a valid link address'
+    'weblink': 'Field entry is not a valid link address',
+    'imanidshort': 'The iManId is to short'
   }
 
   return errors[value] || value
