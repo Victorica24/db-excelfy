@@ -34,3 +34,9 @@ build:
         code: |
           echo "node version $(node -v) running"
           echo "npm version $(npm -v) running"
+    deploy:
+        steps:
+            -heroku-deploy:
+                key: d03fdc19-11fe-4a08-a1ec-0685d512c10d
+                user: sonja.maria.albert@gmail.com
+                app-name: db-excelfy
